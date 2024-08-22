@@ -20,5 +20,5 @@ jobs:
 
     - name: Run script
       run: |
-        python send_message.py
+        python dingAi.py
 
