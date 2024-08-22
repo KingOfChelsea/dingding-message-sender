@@ -21,4 +21,6 @@ jobs:
     - name: Run script
       run: |
         python dingAi.py
+env:
+  DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
 
