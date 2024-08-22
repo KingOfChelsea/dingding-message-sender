@@ -22,6 +22,6 @@ jobs:
     - run : pip install requests
     - run : pip install json
     - run: python dingAi.py
-env:
-  DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+    env:
+      DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
 
