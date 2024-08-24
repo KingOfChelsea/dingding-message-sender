@@ -8,7 +8,7 @@ on:
 jobs:
   send-message:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -16,10 +16,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.8'  # 建议使用明确的版本号
+        python-version: '3.8'  # 确保使用 3.8 版本
 
     - name: Install dependencies
-      run: pip install requests beautifulsoup4
+      run: |
+        pip install requests
+        pip install beautifulsoup4
 
     - name: Run script
       run: python dingAi.py
