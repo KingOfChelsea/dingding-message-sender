@@ -16,12 +16,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.8'  # 建议使用明确的版本号
 
     - name: Install dependencies
-      run: pip install requests
+      run: pip install requests beautifulsoup4
 
     - name: Run script
       run: python dingAi.py
       env:
-        DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+        DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}  # 使用 GitHub Secrets 来保护敏感信息
