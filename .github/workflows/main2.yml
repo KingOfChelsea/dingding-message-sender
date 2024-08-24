@@ -2,7 +2,7 @@ name: Send DingDing Message
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 每小时运行一次
+          - cron: '30 0-18/3 * * 1-7'  # 中国时间早上7点半到晚上7点，每隔3小时触发一次
   workflow_dispatch:  # 允许手动触发
 
 jobs:
