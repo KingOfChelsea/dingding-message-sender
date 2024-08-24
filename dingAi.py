@@ -115,6 +115,7 @@ for ul in items_ul:
 # 输出结果并发送消息
 for person, details in order_counts.items():
     if details["count"] > 0:
+        print("123444444444")
         orders = ', '.join(details["orders"])
         message = f"{person} 你有 {details['count']} 笔财务-付款单（待审核），订单编号：{orders}"
         print(message)
