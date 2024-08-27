@@ -1,9 +1,8 @@
 name: Send DingDing Message
 
 on:
-  schedule:
-
-  workflow_dispatch:  # 允许手动触发
+   schedule:
+    - cron: '*/1 * * * *'
 
 jobs:
   send-message:
